@@ -18,3 +18,10 @@ class Card(object):
     def __str__(self):
         rep = f"{self.rank}:{self.suits}"
         return rep
+
+card_one = Card(Card.SUITS[1], Card.RANKS[0])
+# print(card_one.suits)
+# print(card_one.rank)
+card_two = Card(Card.SUITS[2], Card.RANKS[6])
+#print(card_one)
+#print(card_two)
