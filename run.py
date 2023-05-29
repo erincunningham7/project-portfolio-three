@@ -25,3 +25,30 @@ card_one = Card(Card.SUITS[1], Card.RANKS[0])
 card_two = Card(Card.SUITS[2], Card.RANKS[6])
 #print(card_one)
 #print(card_two)
+
+class Hand(object):
+    """
+    A hand of cards
+    """
+    def __init__(self):
+        self.cards = []
+    
+    def __str__(self):
+        rep = ""
+        if self.cards:
+            
+            for card in self.cards:
+                rep += f"{str(card)} "
+        else:
+            rep = "<Empty Hand>"
+        return rep
+    
+    def clear_hand(self):
+        self.cards = []
+
+    def add_card(self, card):
+        self.cards.append(card)
+
+    def give_card(self, card, other_hand):
+        self.cards.remove(card)
+        other_hand.add_card(card)
