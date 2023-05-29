@@ -52,3 +52,21 @@ class Hand(object):
     def give_card(self, card, other_hand):
         self.cards.remove(card)
         other_hand.add_card(card)
+
+my_hand = Hand()
+print(my_hand)
+my_hand.add_card(card_one)
+print(my_hand)
+
+my_hand.add_card(card_two)
+print(my_hand)
+
+hand2 = Hand()
+print(hand2)
+my_hand.give_card(card_one,hand2)
+print(my_hand)
+print(hand2)
+
+
+
+input("\n\nPress Enter to Exit")
