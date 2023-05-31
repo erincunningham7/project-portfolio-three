@@ -44,4 +44,10 @@ def compare_score(user_score, computer_score):
     else:
         return "Computer wins"
 
+user_score = calculate_score(user_cards)
+computer_score = calculate_score(computer_cards)
+
+print(f"Player cards {user_cards} player score {user_score}")
+print(f"Computers first card {computer_cards[0]}")
+
 input("\n Press enter to exit")
