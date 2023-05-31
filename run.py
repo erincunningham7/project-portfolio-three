@@ -32,17 +32,17 @@ class Hand(object):
     """
     def __init__(self):
         self.cards = []
-    
+
     def __str__(self):
         rep = ""
         if self.cards:
-            
+
             for card in self.cards:
                 rep += f"{str(card)} "
         else:
             rep = "<Empty Hand>"
         return rep
-    
+
     def clear_hand(self):
         self.cards = []
 
@@ -67,6 +67,34 @@ my_hand.give_card(card_one,hand2)
 print(my_hand)
 print(hand2)
 
+class Deck(Hand):
+    """
+    Deck of playing cards
+    """
+    def create_deck(self):
+        for suit in Card.SUITS:
+            for rank in Card.RANKS:
+                self.add_card(Card(rank, suit))
+    
+    def shuffle(self):
+        import random
 
+        random.shuffle(self.cards)
+
+    def deal(self, hands, per_hand=1):
+        for rounds in range(per_hand):
+            for hand in hands:
+                if self.cards:
+                    top_card = self.cards[0]
+                    self.give_card(top_card, hand)
+                else:
+                    print("Out of cards")
+
+
+my_deck = Deck()
+my_deck.create_deck()
+
+print(my_deck)
+print("***************************************")
 
 input("\n\nPress Enter to Exit")
