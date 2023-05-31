@@ -82,4 +82,9 @@ while computer_score != 0 and computer_score < 17:
     computer_cards.append(deal_card())
     computer_score = calculate_score(computer_cards)
 
+print(f"Player score is {calculate_score(user_cards)}")
+print(f"Computer score is {calculate_score(computer_cards)}")
+result = compare_score(user_score, computer_score)
+print(result)
+
 input("\n Press enter to exit")
