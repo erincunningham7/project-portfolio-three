@@ -97,4 +97,7 @@ my_deck.create_deck()
 print(my_deck)
 print("***************************************")
 
+my_deck.shuffle()
+print(my_deck)
+
 input("\n\nPress Enter to Exit")
