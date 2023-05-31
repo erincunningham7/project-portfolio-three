@@ -65,4 +65,17 @@ print(is_game_over)
 print(user_cards)
 print(is_game_over)
 
+while not is_game_over:
+    user_score = calculate_score(user_cards)
+    computer_score = calculate_score(computer_cards)
+    print(user_score)
+    if user_score == 0 or computer_score == 0 or user_score > 21:
+        is_game_over = True
+    else:
+        user_hit = input("Would you like another card? y/n")
+        if user_hit == "y":
+            user_cards.append(deal_card())
+        else:
+            is_game_over = True
+
 input("\n Press enter to exit")
