@@ -3,6 +3,8 @@ import random
 user_cards = []
 computer_cards = []
 
+is_game_over = False
+
 def deal_card():
     """
     Return a random card from a deck
@@ -49,5 +51,18 @@ computer_score = calculate_score(computer_cards)
 
 print(f"Player cards {user_cards} player score {user_score}")
 print(f"Computers first card {computer_cards[0]}")
+
+if user_score == 0 or computer_score == 0 or user_score > 21:
+    is_game_over = True
+else:
+    user_hit = input("Would you like another card? y/n")
+    if user_hit == "y":
+        user_cards.append(deal_card())
+    else:
+        is_game_over = True
+    
+print(is_game_over)
+print(user_cards)
+print(is_game_over)
 
 input("\n Press enter to exit")
