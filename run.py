@@ -94,10 +94,18 @@ class Deck(Hand):
 my_deck = Deck()
 my_deck.create_deck()
 
-print(my_deck)
-print("***************************************")
+# print(my_deck)
+# print("***************************************")
 
 my_deck.shuffle()
-print(my_deck)
+# print(my_deck)
+
+my_hand = Hand()
+dealer_hand = Hand()
+
+players = [my_hand, dealer_hand]
+print(my_hand)
+print(dealer_hand)
+print("*********************")
 
 input("\n\nPress Enter to Exit")
