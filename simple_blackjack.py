@@ -11,5 +11,11 @@ def deal_card():
     card = random.choice(cards)
     return card
 
+#print(deal_card())
 
-print(deal_card())
+for round in range(2):
+    user_cards.append(deal_card())
+    computer_cards.append(deal_card())
+
+print(user_cards)
+print(computer_cards)
