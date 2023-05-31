@@ -28,4 +28,20 @@ def calculate_score(card_hand):
         card_hand.append(1)
     return sum(card_hand)
 
+def compare_score(user_score, computer_score):
+    if user_score == computer_score:
+        return "Draw"
+    elif computer_score == 0:
+        return "Computer wins"
+    elif user_score == 0:
+        return "Player wins"
+    elif user_score > 21:
+        return "User went bust! Computer wins"
+    elif computer_score > 21:
+        return "Computer went bust! User wins"
+    elif user_score > computer_score:
+        return "User wins"
+    else:
+        return "Computer wins"
+
 input("\n Press enter to exit")
