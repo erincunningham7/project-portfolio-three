@@ -75,7 +75,7 @@ class Deck(Hand):
         for suit in Card.SUITS:
             for rank in Card.RANKS:
                 self.add_card(Card(rank, suit))
-    
+ 
     def shuffle(self):
         import random
 
@@ -108,4 +108,4 @@ print(my_hand)
 print(dealer_hand)
 print("*********************")
 
-input("\n\nPress Enter to Exit")
+input("\n\nPress Enter to Exit\n")
