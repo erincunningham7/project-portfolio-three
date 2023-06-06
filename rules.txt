@@ -1,0 +1,13 @@
+*********** RULES ************
+1 Give the players two random cards each.
+2 Check for a blackjack hand (1 Ace + a 10 value card).
+3 Check for user score.
+4 An Ace is worth 11 or a 1 if the total goes over 21.
+5 Reveal the computers first card.
+6 The game ends if the user goes over 21 (Busts).
+7 Ask the user if they want another card.
+8 Once the user is done drawing cards it is the computers turn to get cards.
+9 The computer will keep drawing cards while their total is less than 17.
+10 When nobody wants any more cards compare the total.
+11 Highest total wins.
+12 If the totals are the same it is a draw.
