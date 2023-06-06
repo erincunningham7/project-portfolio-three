@@ -1,31 +1,44 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Blackjack
+## Index - Table Of Contents
+1. [General Information](#general-info)
+2. [User Experience & Design](#ux)
+3. [Features](#features)
+4. [Technologies Used](#tech-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
 
-Welcome USER_NAME,
+<a name="general-info"></a>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## General Information
 
-## Reminders
+<a name="ux"></a>
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## User Experience
 
-## Creating the Heroku app
+**Site Goals**
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+1. As A User
 
-1. `heroku/python`
-2. `heroku/nodejs`
+2. As The Site Administrator
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Design
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+<a name="features"></a>
 
-Connect your GitHub repository and deploy as normal.
+## Features
 
-## Constraints
+<a name="tech-used"></a>
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Technologies Used
 
------
-Happy coding!
+**Languages Used**
+
+**Frameworks, Libraries & Programs Used**
+
+<a name="testing"></a>
+
+## Testing
+
+<a name="deployment"></a>
+
+ ## Deployment
