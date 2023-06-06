@@ -90,6 +90,18 @@ class Deck(Hand):
                 else:
                     print("Out of cards")
 
+def show_rules():
+    """
+    Take a text file with the rules in it and display it back to the user
+    """
+    try:
+        rules_file = open("rules.txt", "r")
+        lines = rules_file.readlines()
+        for line in lines:
+            print(line)
+    except:
+        print("Uh oh something went wrong!")
+
 
 my_deck = Deck()
 my_deck.create_deck()
@@ -104,8 +116,10 @@ my_hand = Hand()
 dealer_hand = Hand()
 
 players = [my_hand, dealer_hand]
-print(my_hand)
-print(dealer_hand)
-print("*********************")
+# print(my_hand)
+# print(dealer_hand)
+# print("*********************")
+show_rules()
+
 
 input("\n\nPress Enter to Exit\n")
