@@ -56,7 +56,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * Testing was ran on the card class to ensure it does it's intended task - creates the suits and ranks, implements the suit symbols and assigns the cards to their number value. This was assessed by creating two card variables and assigning each a specific rank and suit. The cards were then printed using the print statement. To test the return card value function, I assigned each card the function using dot notation and printed them.
 
-* The card class worked as intended. The cards printed to the terminal and the card values were added together.
+* The card class worked as intended.
 
 
 <a name="deployment"></a>
