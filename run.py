@@ -149,7 +149,7 @@ class Card():
     SUITS = ["\u2663", "\u2665", "\u2666", "\u2660"]
     NUMBER_VALUE = {"A": 11, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6,
                     "7": 7, "8": 8, "9": 9, "10": 10, "J": 10, "Q": 10, "K": 10}
-    
+
     def __init__(self, rank, suit) -> None:
         """
         Initialize class
@@ -190,14 +190,23 @@ class Hand():
         else:
             rep = "<EMPTY>"
         return rep
-    
+
     def clear(self):
+        """
+        Emptying every hand and deck when initially called
+        """
         self.cards = []
 
     def add(self, card):
+        """
+        Give card to hand when game begins
+        """
         self.cards.append(card)
 
     def give(self, card, other_hand):
+        """
+        Give cards to both players
+        """
         self.cards.remove(card)
         other_hand.add(card)
 
@@ -209,7 +218,7 @@ class Hand():
         for card in self.cards:
             total += card.return_card_value()
         return total
-    
+
 card1 = Card(Card.RANKS[1], Card.SUITS[1])
 print(card1)
 value1 = card1.return_card_value()
