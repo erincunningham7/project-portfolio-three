@@ -174,11 +174,6 @@ class Card():
         except:
             print("Value not in cards")
 
-card1 = Card(Card.RANKS[1], Card.SUITS[1])
-print(card1)
-value1 = card1.return_card_value()
-print(value1)
-
 class Hand():
     """
     A hand of playing cards
@@ -214,3 +209,19 @@ class Hand():
         for card in self.cards:
             total += card.return_card_value()
         return total
+    
+card1 = Card(Card.RANKS[1], Card.SUITS[1])
+print(card1)
+value1 = card1.return_card_value()
+print(value1)
+card2 = Card(Card.RANKS[2], Card.SUITS[0])
+print(card2)
+value2 = card2.return_card_value()
+print(value2)
+
+my_hand = Hand()
+my_hand.add(card1)
+my_hand.add(card2)
+print(my_hand)
+hand_value = my_hand.hand_total()
+print(hand_value)
