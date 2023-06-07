@@ -70,6 +70,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * The deck class worked as intended.
 
+*Rules.txt*
+
+* Testing was carried out on the rules text file to ensure the game rules were accessible to the player. This was done by calling the show_rules method.
+
+* The rules.txt file worked as intended.
+
 <a name="deployment"></a>
 
  ## Deployment
