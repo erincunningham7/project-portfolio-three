@@ -205,3 +205,12 @@ class Hand():
     def give(self, card, other_hand):
         self.cards.remove(card)
         other_hand.add(card)
+
+    def hand_total(self):
+        """
+        Return the total value of cards in the hand
+        """
+        total = 0
+        for card in self.cards:
+            total += card.return_card_value()
+        return total
