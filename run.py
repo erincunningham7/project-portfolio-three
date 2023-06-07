@@ -133,3 +133,13 @@ deck.create_deck()
 print(deck)
 deck.shuffle()
 print(deck)
+
+def show_rules():
+    """ A function that uses file I/O to read a txt file and show the rules on the screen"""
+    text_file = open("rules.txt", "r")
+    for line in text_file:
+        print(line)
+    text_file.close()
+
+show_rules()
+
