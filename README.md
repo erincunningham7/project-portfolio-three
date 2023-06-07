@@ -96,3 +96,16 @@ git push - This command was used to push all committed code to the remote reposi
 
 touch - This command was used to create new files.
 
+**Heroku Deployment**
+
+To deploy the project to Heroku the following steps were implemented:
+
+1. Log in to Heroku and click "New" to create a new app.
+2. Choose an app name and region, then click "Create app".
+3. Go to "Settings" and navigate to Config Vars. Add PORT 8000.
+4. Navigate to Buildpacks and add buildpacks for Python and NodeJS, ensuring they are strictly in that order.
+5. Navigate to the "Deploy" section. Set the deployment method to Github and enter the chosen repository name and then connect.
+6. Scroll down the page, click Automatic Deploy, select "main" branch and click "Deploy Branch".
+7. The app will now be deployed to heroku.
+
+
