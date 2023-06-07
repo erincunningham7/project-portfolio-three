@@ -78,4 +78,21 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 <a name="deployment"></a>
 
- ## Deployment
+## Deployment
+
+**Version Control**
+
+The site was created using the Code Anywhere code editor and pushed to github to the remote repository "project-portfolio-three".
+
+The following git commands were used throughout development to push code to the remote repo:
+
+git status - This command was used to check which files were modified.
+
+git add . - This command was used to add the changed files to the staging area before they are committed.
+
+git commit -m "commit message" - This command was used to commit changes to the local repository queue ready for the final step.
+
+git push - This command was used to push all committed code to the remote repository on github.
+
+touch - This command was used to create new files.
+
