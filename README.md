@@ -64,6 +64,11 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * The hand class worked as intended.
 
+*Deck Class*
+
+* Testing was done on the deck class to ensure it was working perfectly - creating a full deck of playing cards, looping through the suits and ranks and creating cards accordingly, shuffling the cards and lastly dealing the cards in the appropriate fashion. I created a deck variable and assigned it the deck class. The variable accessed the create_deck method using dot notation and was printed to the terminal. To test the shuffle function I used dot notation again to ingress the shuffle method, and used the print statement.
+
+* The deck class worked as intended.
 
 <a name="deployment"></a>
 
