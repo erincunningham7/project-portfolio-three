@@ -5,12 +5,14 @@
 # Playing cards
 # 29/05/2023
 
-class Card(object):
+class Card():
     """
     A playing card
     """
     RANKS = ["A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
     SUITS = ["D", "H", "S", "C"]
+    NUMBER_VALUE = {"A": 11, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, 
+                    "9": 9, "10": 10, "J": 10, "Q": 10, "K": 10,}
     def __init__(self, rank, suits):
         self.rank = rank
         self.suits = suits
@@ -26,7 +28,7 @@ card_two = Card(Card.SUITS[2], Card.RANKS[6])
 #print(card_one)
 #print(card_two)
 
-class Hand(object):
+class Hand():
     """
     A hand of cards
     """
