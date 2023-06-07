@@ -58,6 +58,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * The card class worked as intended.
 
+*Hand Class*
+
+* Testing was carried out on the hand class to make sure the functions work in the correct fashion - give cards to each player, empty the deck at the beginning of each game and return the total value of cards in a players hand. To test, I assigned a my_hand variable to the hand class. Using dot notation I added both test cards to the newly created hand variable. Using print, I checked the terminal to see that both cards were now present in the hand. Afterwards I made a new variable to test the hand_total function, assigning it the my_hand variable and the hand_total() function using dot notation.
+
+* The hand class worked as intended.
+
 
 <a name="deployment"></a>
 
