@@ -178,3 +178,30 @@ card1 = Card(Card.RANKS[1], Card.SUITS[1])
 print(card1)
 value1 = card1.return_card_value()
 print(value1)
+
+class Hand():
+    """
+    A hand of playing cards
+    """
+
+    def __init__(self):
+        self.cards = []
+
+    def __str__(self):
+        if self.cards:
+            rep = ""
+            for card in self.cards:
+                rep += f"{str(card)} \t"
+        else:
+            rep = "<EMPTY>"
+        return rep
+    
+    def clear(self):
+        self.cards = []
+
+    def add(self, card):
+        self.cards.append(card)
+
+    def give(self, card, other_hand):
+        self.cards.remove(card)
+        other_hand.add(card)
