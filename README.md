@@ -86,6 +86,10 @@ I had to check the player score's and computer score's viability. I created vari
 
 ![Image](images/test-score.png)
 
+The first while loop had to be assessed too. To achieve this I printed the player hand and player score and the same for the computer hand and score.
+
+When the final while loop was done and the entirety of the function was completed I did the final analysis. I repeated the print steps for the previous while loop.
+
 
 
 
