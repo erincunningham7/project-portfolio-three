@@ -113,26 +113,6 @@ class Deck(Hand):
                     print("Can't deal anymore. Out of cards")
 
 card1 = Card(Card.RANKS[1], Card.SUITS[1])
-print(card1)
-value1 = card1.return_card_value()
-print(value1)
-card2 = Card(Card.RANKS[2], Card.SUITS[0])
-print(card2)
-value2 = card2.return_card_value()
-print(value2)
-
-my_hand = Hand()
-my_hand.add(card1)
-my_hand.add(card2)
-print(my_hand)
-hand_value = my_hand.hand_total()
-print(hand_value)
-
-deck = Deck()
-deck.create_deck()
-print(deck)
-deck.shuffle()
-print(deck)
 
 def show_rules():
     """ A function that uses file I/O to read a txt file and show the rules on the screen"""
@@ -142,4 +122,6 @@ def show_rules():
     text_file.close()
 
 show_rules()
+
+
 
