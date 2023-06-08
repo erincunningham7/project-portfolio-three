@@ -146,6 +146,11 @@ def play_game():
     print(player_hand)
     print(computer_hand)
 
+    player_score = player_hand.hand_total()
+    computer_score = computer_hand.hand_total()
+    print(player_score)
+    print(computer_score)
+
 
 play_game()
    
