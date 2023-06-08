@@ -160,14 +160,27 @@ def play_game():
         else:
             is_game_over = True
 
-    print(player_hand)
-    player_score = player_hand.hand_total()
-    print(player_score)
+    while not is_game_over:
+        player_score = player_hand.hand_total()
+        computer_score = computer_hand.hand_total()
 
-    blackjack_deck.deal([computer_hand])
-    computer_score = computer_hand.hand_total()
+        print(player_hand)
+        print(player_score)
+
+        print(computer_hand)
+        print(computer_score)
+
+        if player_score > 21:
+            is_game_over = True
+        else:
+            if player_hit == 'y':
+                blackjack_deck.deal([player_hand])
+            else:
+                is_game_over = True
+
+    print(player_hand)
     print(computer_hand)
-    print(computer_score)
+
 
 play_game()
    
