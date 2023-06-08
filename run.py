@@ -80,7 +80,7 @@ class Hand():
         for card in self.cards:
             total += card.return_card_value()
         return total
-    
+ 
 class Deck(Hand):
     """
     This class creates a full deck of playing cards
@@ -121,7 +121,24 @@ def show_rules():
         print(line)
     text_file.close()
 
-show_rules()
+#show_rules()
+
+def play_game():
+    """
+    A function that allows the user to play a game of blackjack against the computer
+    """
+    blackjack_deck = Deck()
+    blackjack_deck.create_deck()
+    blackjack_deck.shuffle()
+
+    print(blackjack_deck)
+
+    # Flag to end the game
+    is_game_over = False
 
 
+    # Create player hand and computer hand
 
+
+play_game()
+   
