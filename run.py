@@ -131,13 +131,20 @@ def play_game():
     blackjack_deck.create_deck()
     blackjack_deck.shuffle()
 
-    print(blackjack_deck)
-
     # Flag to end the game
     is_game_over = False
 
-
     # Create player hand and computer hand
+    player_hand = Hand()
+    computer_hand = Hand()
+
+    players = []
+    players.append(player_hand)
+    players.append(computer_hand)
+
+    blackjack_deck.deal(players, 2)
+    print(player_hand)
+    print(computer_hand)
 
 
 play_game()
