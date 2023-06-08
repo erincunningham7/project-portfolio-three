@@ -164,5 +164,10 @@ def play_game():
     player_score = player_hand.hand_total()
     print(player_score)
 
+    blackjack_deck.deal([computer_hand])
+    computer_score = computer_hand.hand_total()
+    print(computer_hand)
+    print(computer_score)
+
 play_game()
    
