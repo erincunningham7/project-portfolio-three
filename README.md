@@ -76,6 +76,16 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * The rules.txt file worked as intended.
 
+*Play Game Function*
+
+* This function was tested to verify it was running effectively - allowing the user to play the card game against the computer, flagging the end of the game, creating hands for both the player and the computer, dealing cards to the player and the computer, getting player and computer hand totals, adding inputs for the user to take or refuse a card, ending the game if the card hand total is over 21 and creating the computers moves. 
+To test it's functionality, I began with the blackjack_deck variable accessing the deal method using dot notation, and passing in the recently created players variable and the number 2 as arguments in the parentheses. By printing the player hand and the computer hand variables, I could easily analyse the code result in the terminal.
+I had to check the player score's and computer score's viability. I created variables of the same name and assigned them to the player/computer hand, which were then appeneded to the hand total function. I subsequently printed both player and computer score variables.
+
+
+
+
+
 <a name="deployment"></a>
 
 ## Deployment
