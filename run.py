@@ -173,6 +173,7 @@ def play_game():
         if player_score > 21:
             is_game_over = True
         else:
+            player_hit = input("Type 'y' to hit or 'n' to stand\n").lower()
             if player_hit == 'y':
                 blackjack_deck.deal([player_hand])
             else:
@@ -190,4 +191,4 @@ def play_game():
 
 
 play_game()
-   
+
