@@ -90,10 +90,7 @@ The first while loop had to be assessed too. To achieve this I printed the playe
 
 When the final while loop was done and the entirety of the function was completed I did the final analysis. I repeated the print steps for the previous while loop.
 
-
-
-
-
+![Image](images/while-loop-test.png)
 
 <a name="deployment"></a>
 
