@@ -5,7 +5,7 @@
 # Playing cards
 # 29/05/2023
 
-
+import random
 
 class Card():
     """A Playing Card Object """
@@ -110,7 +110,6 @@ class Deck(Hand):
         """
         Use the random module and built in shuffle method to shuffle the deck
         """
-        import random
         random.shuffle(self.cards)
 
     def deal(self, hands, per_hand=1):
