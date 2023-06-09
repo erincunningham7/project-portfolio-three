@@ -115,7 +115,7 @@ class Deck(Hand):
         """
         Deal cards
         """
-        for rounds in range(per_hand):
+        for _ in range(per_hand):
             for hand in hands:
                 if self.cards:
                     top_card = self.cards[0]
