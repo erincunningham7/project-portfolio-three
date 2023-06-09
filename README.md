@@ -39,11 +39,24 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## Features
 
-# Pep 8 Style Guide
+# PEP 8 Style Guide
+ 
+ The PEP 8 style guidlines were implemented throughout this project.
+
+ Following the ASCII compatability standard, identifiers use Latin letters only.
 
 ![Image](images/pep-8-ascii.png)
+
+* All class names as seen in this project use the CapWords convention, for example the Card, Hand and Deck class names. All function names are lowercase with words separated by underscores as necessary to improve readability, such as return_card_value, hand_total, create_deck, show_rules, and many more.
+
 ![Image](images/pep-8-class-names.png)
+
+* Every constant in the run.py file follows the pep8 contants guidelines, written in all capitals and separated by underscores for easy reading. For example, RANKS, SUITS, NUMBER_VALUE and ACE_VALUE.
+
 ![Image](images/pep-8-constants.png)
+
+* Correct use of whitespace as per the PEP8 guidelines can be seen in the NUMBER_VALUE dictionary.
+
 ![Image](images/pep-8-whitespace.png)
 
 <a name="tech-used"></a>
@@ -68,13 +81,13 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 *Hand Class*
 
-* Testing was carried out on the hand class to make sure the functions work in the correct fashion - give cards to each player, empty the deck at the beginning of each game and return the total value of cards in a players hand. To test, I assigned a my_hand variable to the hand class. Using dot notation I added both test cards to the newly created hand variable. Using print, I checked the terminal to see that both cards were now present in the hand. Afterwards I made a new variable to test the hand_total function, assigning it the my_hand variable and the hand_total() function using dot notation.
+* Testing was carried out on the hand class to make sure the functions work in the correct fashion - give cards to each player, empty the deck at the beginning of each game and return the total value of cards in a players hand. To test, I assigned a my_hand identifier to the hand class. Using dot notation I added both test cards to the newly created hand identifier. Using print, I checked the terminal to see that both cards were now present in the hand. Afterwards I made a new variable to test the hand_total function, assigning it the my_hand identifier and the hand_total() function using dot notation.
 
 * The hand class worked as intended.
 
 *Deck Class*
 
-* Testing was done on the deck class to ensure it was working perfectly - creating a full deck of playing cards, looping through the suits and ranks and creating cards accordingly, shuffling the cards and lastly dealing the cards in the appropriate fashion. I created a deck variable and assigned it the deck class. The variable accessed the create_deck method using dot notation and was printed to the terminal. To test the shuffle function I used dot notation again to ingress the shuffle method, and used the print statement.
+* Testing was done on the deck class to ensure it was working perfectly - creating a full deck of playing cards, looping through the suits and ranks and creating cards accordingly, shuffling the cards and lastly dealing the cards in the appropriate fashion. I created a deck identifier and assigned it the deck class. The identifier accessed the create_deck method using dot notation and was printed to the terminal. To test the shuffle function I used dot notation again to ingress the shuffle method, and used the print statement.
 
 * The deck class worked as intended.
 
@@ -88,9 +101,9 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * This function was tested to verify it was running effectively - allowing the user to play the card game against the computer, flagging the end of the game, creating hands for both the player and the computer, dealing cards to the player and the computer, getting player and computer hand totals, adding inputs for the user to take or refuse a card, ending the game if the card hand total is over 21 and creating the computers moves. 
 
-To test it's functionality, I began with the blackjack_deck variable accessing the deal method using dot notation, and passing in the recently created players variable and the number 2 as arguments in the parentheses. By printing the player hand and the computer hand variables, I could easily analyse the code result in the terminal.
+To test it's functionality, I began with the blackjack_deck identiifier accessing the deal method using dot notation, and passing in the recently created players identifier and the number 2 as arguments in the parentheses. By printing the player hand and the computer hand identifiers, I could easily analyse the code result in the terminal.
 
-I had to check the player score's and computer score's viability. I created variables of the same name and assigned them to the player/computer hand, which were then appeneded to the hand total function. I subsequently printed both player and computer score variables.
+I had to check the player score's and computer score's viability. I created identifiers of the same name and assigned them to the player/computer hand, which were then appeneded to the hand total function. I subsequently printed both player and computer score identifiers.
 
 ![Image](images/test-score.png)
 
