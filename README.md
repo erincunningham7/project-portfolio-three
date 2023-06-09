@@ -111,7 +111,7 @@ To test it's functionality, I began with the blackjack_deck identiifier accessin
 
 I had to check the player score's and computer score's viability. I created identifiers of the same name and assigned them to the player/computer hand, which were then appeneded to the hand total function. I subsequently printed both player and computer score identifiers.
 
-![Image](images/test-score.png)
+![Image](images/score-test.png)
 
 The first while loop had to be assessed too. To achieve this I printed the player hand and player score and the same for the computer hand and score.
 
