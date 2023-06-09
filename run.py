@@ -266,6 +266,8 @@ def print_menu():
     print("Press 0 to Quit the game.")
 
 # Creating the user menu allowing the user to interact with the game
+
+
 choice = None
 while choice != "0":
     print_menu()
