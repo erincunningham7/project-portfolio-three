@@ -133,8 +133,8 @@ class Deck(Hand):
 
 
 def show_rules():
-    """ 
-    A function that uses file I/O to read a 
+    """
+    A function that uses file I/O to read a
     txt file and show the rules on the screen
     """
     text_file = open("rules.txt", "r")
