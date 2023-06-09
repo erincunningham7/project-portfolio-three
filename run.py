@@ -37,7 +37,7 @@ class Card():
         try:
             value = Card.NUMBER_VALUE[self.rank]
             return value
-        except:
+        except ValueError:
             print("Value not in cards")
 
 
