@@ -25,7 +25,6 @@ This is a simple blackjack game. This python game has all the attributes of the 
 * I would like to be able to access the game instructions upon opening the game.
 * I would like to be able to easily differentiate between card suits.
 * I would like to have the option to take more cards if I wanted to.
-* I would like to be able to see the dealer's first card, like in the classic blackjack game.
 * I would like to be able to see the user score and computer score once the game is over.
 * I would like the game to run smoothly and without errors.
 
