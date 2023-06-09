@@ -260,8 +260,14 @@ while choice != "0":
         show_rules()
         input("Press enter to continue \n")
     elif choice == "2":
-        print("Play game")
-        input("Press Enter to continue")
+        play_again = True
+        play_game()
+        while play_again:
+            play = ask_yes_no("Type 'y' to play again or 'n' to quit")
+            if play == 'y':
+                play_game()
+            else:
+                play_again = False
     else:
         print("Sorry that isnt a valid choice")
 
