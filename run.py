@@ -123,8 +123,6 @@ class Deck(Hand):
                 else:
                     print("Can't deal anymore. Out of cards")
 
-card1 = Card(Card.RANKS[1], Card.SUITS[1])
-
 def show_rules():
     """ A function that uses file I/O to read a txt file and show the rules on the screen"""
     text_file = open("rules.txt", "r")
@@ -251,5 +249,4 @@ def print_menu():
     print("Press 2 to play the game.")
     print("Press 0 to Quit the game.")
 
-#play_game()
-print_menu()
+
