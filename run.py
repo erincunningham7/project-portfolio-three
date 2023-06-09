@@ -175,7 +175,8 @@ def ask_yes_no(question):
 
 def play_game():
     """
-    A function that allows the user to play a game of blackjack against the computer
+    A function that allows the user to play a
+    game of blackjack against the computer
     """
     blackjack_deck = Deck()
     blackjack_deck.create_deck()
@@ -255,7 +256,7 @@ def print_menu():
         |A_  _ |.          | |   | |          | |  (_)          | |   
         |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
         | \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-        |  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
+        |  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   <
         `-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
               |  \/ K|                            _/ |                
               `------'                           |__/           
