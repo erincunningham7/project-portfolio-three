@@ -268,7 +268,7 @@ def print_menu():
 # Creating the user menu allowing the user to interact with the game
 
 
-CHOICE = None
+choice = None
 while choice != "0":
     print_menu()
     choice = input("Choose an option: \n")
