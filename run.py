@@ -230,7 +230,6 @@ def play_game():
             else:
                 is_game_over = True
 
-
     while computer_score < 17:
         blackjack_deck.deal([computer_hand])
         computer_score = computer_hand.hand_total()
