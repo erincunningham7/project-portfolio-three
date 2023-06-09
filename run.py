@@ -249,4 +249,21 @@ def print_menu():
     print("Press 2 to play the game.")
     print("Press 0 to Quit the game.")
 
+# Creating the user menu allowing the user to interact with the game
+choice = None
+while choice != "0":
+    print_menu()
+    choice = input("Choose an option: \n")
+    if choice == "0":
+        print("Thanks for playing!")
+    elif choice == "1":
+        show_rules()
+        input("Press enter to continue \n")
+    elif choice == "2":
+        print("Play game")
+        input("Press Enter to continue")
+    else:
+        print("Sorry that isnt a valid choice")
+
+
 
