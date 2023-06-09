@@ -59,7 +59,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ![Image](images/pep-8-whitespace.png)
 
-# Object Orientad Programming
+# Object Oriented Programming
 
 * OOP was implemented in this project. The Deck class is a derived/child class of the Hand class. By using this python inheritance, I could use the details of the existing parent class without modifying it.
 
