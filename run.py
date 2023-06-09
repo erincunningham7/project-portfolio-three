@@ -5,6 +5,8 @@
 # Playing cards
 # 29/05/2023
 
+
+
 class Card():
     """A Playing Card Object """
     RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q"]
@@ -263,7 +265,7 @@ while choice != "0":
         play_again = True
         play_game()
         while play_again:
-            play = ask_yes_no("Type 'y' to play again or 'n' to quit")
+            play = ask_yes_no("Type 'y' to play again or 'n' to quit\n")
             if play == 'y':
                 play_game()
             else:
