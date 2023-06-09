@@ -232,4 +232,24 @@ def play_game():
     player_hand.clear()
     computer_hand.clear()
 
-play_game()
+def print_menu():
+    """
+    Print User interface and game art 
+    """
+    logo = """
+        .------.            _     _            _    _            _    
+        |A_  _ |.          | |   | |          | |  (_)          | |   
+        |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
+        | \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
+        |  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
+        `-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
+              |  \/ K|                            _/ |                
+              `------'                           |__/           
+        """
+    print(logo)
+    print("Press 1 to view the rules.")
+    print("Press 2 to play the game.")
+    print("Press 0 to Quit the game.")
+
+#play_game()
+print_menu()
