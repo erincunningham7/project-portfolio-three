@@ -40,6 +40,10 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## Features
 
+# Pep 8 Style Guide
+
+
+
 <a name="tech-used"></a>
 
 ## Technologies Used
