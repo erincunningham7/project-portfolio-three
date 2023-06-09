@@ -43,7 +43,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
  
  The PEP 8 style guidlines were implemented throughout this project.
 
- Following the ASCII compatability standard, identifiers use Latin letters only.
+* Following the ASCII compatability standard, identifiers use Latin letters only.
 
 ![Image](images/pep-8-ascii.png)
 
@@ -58,6 +58,10 @@ This is a simple blackjack game. This python game has all the attributes of the 
 * Correct use of whitespace as per the PEP8 guidelines can be seen in the NUMBER_VALUE dictionary.
 
 ![Image](images/pep-8-whitespace.png)
+
+# Object Orientad Programming
+
+* OOP was implemented in this project. The Deck class is a derived/child class of the Hand class. By using this python inheritance, I could use the details of the existing parent class without modifying it.
 
 <a name="tech-used"></a>
 
