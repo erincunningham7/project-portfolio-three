@@ -271,6 +271,3 @@ while choice != "0":
                 play_again = False
     else:
         print("Sorry that isnt a valid choice")
-
-
-
