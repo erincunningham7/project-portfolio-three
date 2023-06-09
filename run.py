@@ -89,7 +89,7 @@ class Hand():
 
         if contains_ace and total > 21:
             total -= 10
-        
+       
         return total
  
 class Deck(Hand):
@@ -132,7 +132,29 @@ def show_rules():
         print(line)
     text_file.close()
 
-#show_rules()
+def compare_score(score1, score2):
+    """"
+    Compare the score values of a hand and decide the winner
+    """
+    if score1 == score2:
+        return "It's a draw!"
+    elif score2 == 21:
+        return "Computer wins! Blackjack!!!"
+    elif score1 == 21:
+        return "Player wins! Blackjack!!!"
+    elif score1 > 21:
+        return "Player went bust! Player loses! Computer wins!"
+    elif score2 > 21:
+        return "Computer went bust! Computer loses! Player wins!"
+    elif score1 > score2:
+        return "Player closest to 21. Player wins!"
+    else:
+        return "Computer closest to 21. Computer wins!"
+    
+    
+
+
+
 
 def play_game():
     """
@@ -199,6 +221,9 @@ def play_game():
     print(f"Player Hand total: {player_score}")
     print(f"Computer Cards: {computer_hand}")
     print(f"Computer Hand total: {computer_score}")
+    result = compare_score(player_score, computer_score)
+    print(result)
+    
 
 
 play_game()
