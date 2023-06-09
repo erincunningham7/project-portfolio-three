@@ -9,7 +9,10 @@ import random
 
 
 class Card():
-    """A Playing Card Object """
+    """
+    A playing card object that creates suits,
+    ranks and their respective number values
+    """
     RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q"]
     SUITS = ["\u2663", "\u2665", "\u2666", "\u2660"]
     NUMBER_VALUE = {"A": 11, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7,
@@ -99,7 +102,8 @@ class Hand():
 
 class Deck(Hand):
     """
-    This class creates a full deck of playing cards
+    This class creates a full deck of playing cards and
+    inherits from the hand class
     """
     def create_deck(self):
         """
@@ -129,7 +133,10 @@ class Deck(Hand):
 
 
 def show_rules():
-    """ A function that uses file I/O to read a txt file and show the rules on the screen"""
+    """ 
+    A function that uses file I/O to read a 
+    txt file and show the rules on the screen
+    """
     text_file = open("rules.txt", "r")
     for line in text_file:
         print(line)
