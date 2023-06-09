@@ -142,6 +142,7 @@ def show_rules():
         print(line)
     text_file.close()
 
+
 def compare_score(score1, score2):
     """"
     Compare the score values of a hand and decide the winner
@@ -161,6 +162,7 @@ def compare_score(score1, score2):
     else:
         return "Computer closest to 21. Computer wins!"
 
+
 def ask_yes_no(question):
     """
     A function that only allows the user to answer "y" or "n"
@@ -169,6 +171,7 @@ def ask_yes_no(question):
     while response not in ("y", "n"):
         response = input(question).lower()
     return response
+
 
 def play_game():
     """
@@ -241,6 +244,7 @@ def play_game():
     blackjack_deck.clear()
     player_hand.clear()
     computer_hand.clear()
+
 
 def print_menu():
     """
