@@ -39,7 +39,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## Features
 
-# PEP 8 Style Guide
+### PEP 8 Style Guide
  
  The PEP 8 style guidlines were implemented throughout this project.
 
@@ -59,7 +59,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ![Image](images/pep-8-whitespace.png)
 
-# Object Oriented Programming
+### Object Oriented Programming
 
 * OOP was implemented in this project. The Deck class is a derived/child class of the Hand class. By using this python inheritance, I could use the details of the existing parent class without modifying it.
 
