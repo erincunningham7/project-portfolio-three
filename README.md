@@ -42,7 +42,10 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 # Pep 8 Style Guide
 
-
+![Image](images/pep-8-ascii.png)
+![Image](images/pep-8-class-names.png)
+![Image](images/pep-8-constants.png)
+![Image](images/pep-8-whitespace.png)
 
 <a name="tech-used"></a>
 
