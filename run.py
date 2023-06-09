@@ -227,5 +227,9 @@ def play_game():
     print(f"Computer Hand total: {computer_score}")
     result = compare_score(player_score, computer_score)
     print(result)
+    # Clear the deck for the next round
+    blackjack_deck.clear()
+    player_hand.clear()
+    computer_hand.clear()
 
 play_game()
