@@ -67,9 +67,11 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## Technologies Used
 
-**Languages Used**
-
 **Frameworks, Libraries & Programs Used**
+
+* [The blackjack logo came from ascii art](https://www.asciiart.eu/)
+
+* I referred to the book Python Programming Third Edition by Michael Dawson, Chapter 9, for inspiration on how to create the Card class and the ask_yes_no function.
 
 <a name="testing"></a>
 
