@@ -150,11 +150,15 @@ def compare_score(score1, score2):
         return "Player closest to 21. Player wins!"
     else:
         return "Computer closest to 21. Computer wins!"
-    
-    
 
-
-
+def ask_yes_no(question):
+    """
+    A function that only allows the user to answer "y" or "n"
+    """
+    response = None
+    while response not in ("y", "n"):
+        response = input(question).lower()
+    return response
 
 def play_game():
     """
@@ -176,18 +180,18 @@ def play_game():
     players.append(computer_hand)
 
     blackjack_deck.deal(players, 2)
-    print(player_hand)
-    print(computer_hand)
+    print(f"Players Hand: {player_hand}")
+    print(f"Computers Hand: {computer_hand}")
 
     player_score = player_hand.hand_total()
     computer_score = computer_hand.hand_total()
-    print(player_score)
-    print(computer_score)
+    print(f"Player Score: {player_score}")
+    print(f"Computer Score: {computer_score}")
 
     if player_score > 21:
         is_game_over = True
     else:
-        player_hit = input("Type 'y' to hit or 'n' to stand\n").lower()
+        player_hit = ask_yes_no("Type 'y' to hit or 'n' to stand: \n")
         if player_hit == 'y':
             blackjack_deck.deal([player_hand])
         else:
@@ -197,16 +201,16 @@ def play_game():
         player_score = player_hand.hand_total()
         computer_score = computer_hand.hand_total()
 
-        print(player_hand)
-        print(player_score)
+        print(f"Player Hand: {player_hand}")
+        print(f"Player Score: {player_score}")
 
-        print(computer_hand)
-        print(computer_score)
+        print(f"Computer Hand: {computer_hand}")
+        print(f"Computer Score: {computer_score}")
 
         if player_score > 21:
             is_game_over = True
         else:
-            player_hit = input("Type 'y' to hit or 'n' to stand\n").lower()
+            player_hit = ask_yes_no("Type 'y' to hit or 'n' to stand: \n")
             if player_hit == 'y':
                 blackjack_deck.deal([player_hand])
             else:
@@ -223,8 +227,5 @@ def play_game():
     print(f"Computer Hand total: {computer_score}")
     result = compare_score(player_score, computer_score)
     print(result)
-    
-
 
 play_game()
-
