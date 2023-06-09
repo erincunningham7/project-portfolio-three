@@ -80,6 +80,16 @@ class Hand():
         total = 0
         for card in self.cards:
             total += card.return_card_value()
+
+        # Determine if there is an ace in the hand
+        contains_ace = False
+        for card in self.cards:
+            if card.return_card_value() == Card.ACE_VALUE:
+                contains_ace = True
+
+        if contains_ace and total > 21:
+            total -= 10
+        
         return total
  
 class Deck(Hand):
