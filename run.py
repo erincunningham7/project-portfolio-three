@@ -7,6 +7,7 @@
 
 import random
 
+
 class Card():
     """A Playing Card Object """
     RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q"]
@@ -38,6 +39,7 @@ class Card():
             return value
         except:
             print("Value not in cards")
+
 
 class Hand():
     """
@@ -91,9 +93,10 @@ class Hand():
 
         if contains_ace and total > 21:
             total -= 10
-       
+
         return total
- 
+
+
 class Deck(Hand):
     """
     This class creates a full deck of playing cards
@@ -123,6 +126,7 @@ class Deck(Hand):
                     self.give(top_card, hand)
                 else:
                     print("Can't deal anymore. Out of cards")
+
 
 def show_rules():
     """ A function that uses file I/O to read a txt file and show the rules on the screen"""
