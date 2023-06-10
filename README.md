@@ -54,6 +54,12 @@ The structure of the app was defined and mapped out on a flow chart. The flow ch
 
 ## Design
 
+*Color Scheme*
+
+* When designing this project, my main focus with the color scheme was easy readability. I wanted the users to clearly differentiate between the player and computer hands. I decided to use red and green as they are opposite each other on the colour wheel and are highly contrasting.
+
+![Image](images/color-contrast.png)
+
 <a name="features"></a>
 
 ## Features
