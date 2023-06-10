@@ -67,6 +67,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ![Image](images/suit-symbols.png)
 
+*Problem Breakdown*
+
+* To aid in designing, I broke down each problem into smaller sections. To model the actions of the card and hand classes I used the attached class diagram.  The class diagram also models the relationship between the hand and deck classes and it shows how the deck class inherits all the functions from the hand class.
+
+![Image](images/class-diagram.jpg)
+
 <a name="features"></a>
 
 ## Features
