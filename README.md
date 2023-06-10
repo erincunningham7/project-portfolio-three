@@ -64,6 +64,10 @@ The structure of the app was defined and mapped out on a flow chart. The flow ch
 
 ![Image](images/color-scheme-blue.png)
 
+* When the game computes the winner, the text appears in a bright yellow shade. It is akin to gold, synonymous with winning. It draws in the user immediately as it is brighter than the other colours.
+
+![Image](images/color-scheme-winner)
+
 <a name="features"></a>
 
 ## Features
