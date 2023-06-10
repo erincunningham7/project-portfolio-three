@@ -53,7 +53,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * The structural design element of the app was defined and mapped out on a flow chart. The flow chart helped to give a visual representation of the sequence of steps and decisions needed to perform the creative process. It communicated the steps of the process very effectively and efficiently.
 
-![Image]()
+![Image](images/flowchart.jpg)
 
 *Game Logo*
 
