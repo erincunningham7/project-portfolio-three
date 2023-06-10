@@ -175,6 +175,10 @@ The winner is automatically calculated and shown to the user when the game is ov
 
 * [I used the ci python linter to check for errors](https://pep8ci.herokuapp.com/#)
 
+* [I used colorama to color the text in the app](https://pypi.org/project/colorama/)
+
+* [My mentor recommended this website to help with the errors on the logo](https://www.digitalocean.com/community/tutorials/python-raw-string)
+
 <a name="testing"></a>
 
 ## Testing
