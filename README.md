@@ -19,6 +19,10 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## User Experience
 
+**Strategy**
+
+The objective of the site is to allow users to play a classic game of blackjack against the computer.
+
 **Site Goals**
 
 1. As A User
