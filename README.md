@@ -37,6 +37,21 @@ The objective of the site is to allow users to play a classic game of blackjack 
 * I want the game to be easy to use.
 * I want the blackjack game to mimic all the characteristics of the classic game.
 
+**Scope**
+
+1. Essential Content
+* The app will allow users to play the blackjack card game against the computer.
+
+2. Optional Content
+* Users have three options at the beginning of the game - view the rules, play the game or quit.
+* Users have the option to take another card or stand.
+
+**Structure**
+
+The structure of the app was defined and mapped out on a flow chart. The flow chart helped to give a visual representation of the sequence of steps and decisions needed to perform the creative process. It communicated the steps of the process very effectively and efficiently.
+
+![Image]()
+
 ## Design
 
 <a name="features"></a>
