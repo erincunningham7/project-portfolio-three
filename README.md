@@ -13,6 +13,8 @@
 
 This is a simple blackjack game. This python game has all the attributes of the classic card game.  It uses decks of 52 cards, four suits, with the typical shuffle card technique, instructions and score board, this game envokes the quintessential casino game. The player plays against the computer/dealer with the strategy to beat the dealer's hand without going over 21.
 
+[Link to app](https://project-portfolio-three-pp3.herokuapp.com/)
+
  [![Video](images/blackjack.gif)
 
 <a name="ux"></a>
