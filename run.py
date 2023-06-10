@@ -149,19 +149,19 @@ def compare_score(score1, score2):
     Compare the score values of a hand and decide the winner
     """
     if score1 == score2:
-        return "It's a draw!"
+        return Fore.YELLOW + "It's a draw!"
     elif score2 == 21:
-        return "Computer wins! Blackjack!!!"
+        return Fore.YELLOW + "Computer wins! Blackjack!!!"
     elif score1 == 21:
-        return "Player wins! Blackjack!!!"
+        return Fore.YELLOW + "Player wins! Blackjack!!!"
     elif score1 > 21:
-        return "Player went bust! Player loses! Computer wins!"
+        return Fore.YELLOW + "Player went bust! Player loses! Computer wins!"
     elif score2 > 21:
-        return "Computer went bust! Computer loses! Player wins!"
+        return Fore.YELLOW + "Computer went bust! Computer loses! Player wins!"
     elif score1 > score2:
-        return "Player closest to 21. Player wins!"
+        return Fore.YELLOW + "Player closest to 21. Player wins!"
     else:
-        return "Computer closest to 21. Computer wins!"
+        return Fore.Yellow + "Computer closest to 21. Computer wins!"
 
 
 def ask_yes_no(question):
