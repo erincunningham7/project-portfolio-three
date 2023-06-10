@@ -60,6 +60,10 @@ The structure of the app was defined and mapped out on a flow chart. The flow ch
 
 ![Image](images/color-contrast.png)
 
+* The questions that are asked to the user are printed in blue text. The blue stands out from the red and green. It makes the questions easy to decipher from the rest of the text and the user is automatically drawn to the blue text and to answer the question as a result.
+
+![Image](images/color-scheme-blue.png)
+
 <a name="features"></a>
 
 ## Features
