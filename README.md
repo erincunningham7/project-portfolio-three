@@ -47,7 +47,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * When the game computes the winner, the text appears in a bright yellow shade. It is akin to gold, synonymous with winning. It draws in the user immediately as it is brighter than the other colours.
 
-![Image](images/color-scheme-winner)
+![Image](images/color-scheme-winner.png)
 
 *Flowchart*
 
