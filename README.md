@@ -56,17 +56,29 @@ This is a simple blackjack game. This python game has all the attributes of the 
 * For the logic and flow of the game I modelled its behaviour using the following pseudocode:
 
 Deal both computer + player 2 cards each.
+
 For the player:
+
 Ask the player if they want to hit while hand total is less than 21.
+
 When the player no longer wants any more cards it is the computers turn.
+
 If the computers hand total is less than 17 the computer will take another card.
+
 When the computers hand goes above 17 the round ends.
-The total of the player hand and the computer hands are compared to determine a winner
+
+The total of the player hand and the computer hands are compared to determine a winner.
+
 If the total is the same it is a draw.
-If the player hand is higher than 21 the player busts and computer wins
+
+If the player hand is higher than 21 the player busts and computer wins.
+
 If the computer hand is higher than 21 and the player hand is lower than 21 then the computer busts and the player wins.
+
 If it is not a draw or the player or computer has not gone bust then compare which hand is closer to 21.
+
 If the player hand is closer to 21 then the player wins.
+
 If the computer hand is closer to 21 then the computer wins.
 
 Using that pseudocode I then modelled the logic out visually and created the attached flow chart.
