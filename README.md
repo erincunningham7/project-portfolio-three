@@ -61,13 +61,6 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ![Image](images/blackjack-logo.png)
 
-*Rules*
-
-* There are 13 game rules that the user can follow to get the jist of the blackjack game. The built in open function is used to access and read the rules.txt file.
-
-![Image](images/rules.png)
-
-
 <a name="features"></a>
 
 ## Features
@@ -77,6 +70,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 The game menu is immediately accessible upon opeing the app. It gives the user three options - to view the game rules, to play the game and to quit the game. The user simply has to press the coinciding digit to make theu choice. It's straightforward and easy to understand.
 
 ![Image](images/game-menu.png)
+
+*Rules*
+
+* There are 13 game rules that the user can follow to get the jist of the blackjack game. The built in open function is used to access and read the rules.txt file.
+
+![Image](images/rules.png)
 
 ### PEP 8 Style Guide
  
