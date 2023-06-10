@@ -6,7 +6,7 @@
 # 29/05/2023
 
 import random
-from colorama import Fore
+from colorama import Fore, Style
 
 
 class Card():
