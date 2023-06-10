@@ -121,6 +121,12 @@ There are 13 game rules that the user can follow to get the jist of the blackjac
 
 ![Image](images/rules.png)
 
+*Play the game*
+
+When the player hits 2 and enter to play the game, the players hand and computers hand are displayed. The cards for both competitors are clearly shown, with the total score located underneath. The user has a clear grasp of what is happening and has enough information to decide whether to take a hit and gain another card, or stand.
+
+![Image](images/game-feature.png)
+
 ### PEP 8 Style Guide
  
  The PEP 8 style guidlines were implemented throughout this project.
