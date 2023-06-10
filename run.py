@@ -206,7 +206,8 @@ def play_game():
     if player_score > 21:
         is_game_over = True
     else:
-        player_hit = ask_yes_no(Fore.BLUE + "Type 'y' to hit or 'n' to stand: \n")
+        player_hit = ask_yes_no(Fore.BLUE +
+                                "Type 'y' to hit or 'n' to stand: \n")
         if player_hit == 'y':
             blackjack_deck.deal([player_hand])
         else:
@@ -225,7 +226,8 @@ def play_game():
         if player_score > 21:
             is_game_over = True
         else:
-            player_hit = ask_yes_no(Fore.BLUE + "Type 'y' to hit or 'n' to stand: \n")
+            player_hit = ask_yes_no(Fore.BLUE +
+                                    "Type 'y' to hit or 'n' to stand: \n")
             if player_hit == 'y':
                 blackjack_deck.deal([player_hand])
             else:
@@ -282,7 +284,8 @@ while choice != "0":
         play_again = True
         play_game()
         while play_again:
-            play = ask_yes_no(Fore.BLUE + "Type 'y' to play again or 'n' to quit\n")
+            play = ask_yes_no(Fore.BLUE +
+                              "Type 'y' to play again or 'n' to quit\n")
             if play == 'y':
                 play_game()
             else:
