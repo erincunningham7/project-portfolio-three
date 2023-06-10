@@ -129,9 +129,7 @@ When the player hits 2 and enter to play the game, the players hand and computer
 
 *Computers Turn*
 
-When it is the computers turn to play, the computer will keep taking cards until they reach a total score of 17.
-
-
+When it is the computers turn to play, the computer will keep taking cards until they reach a total score of 17. This prevents the computer from winning every time or going bust.
 
 ### PEP 8 Style Guide
  
