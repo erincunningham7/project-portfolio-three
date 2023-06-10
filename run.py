@@ -1,7 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
 # Playing cards
 # 29/05/2023
 
@@ -264,9 +260,6 @@ def print_logo():
               `------'                           |__/
     """
     print(logo)
-
-
-# Creating the user menu allowing the user to interact with the game
 
 
 print_logo()
