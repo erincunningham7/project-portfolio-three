@@ -189,6 +189,14 @@ When the final while loop was done and the entirety of the function was complete
 
 ![Image](images/while-loop-test.png)
 
+*Ace Card*
+
+During testing, I discovered that when playing if a hand gets more than one ace only the first ace will change value between 1 and 11. I was ensure how to fix this bug so I included it as a part of the rules of the game that only one ace was allowed to change value (The bug is now a feature).
+
+*Ask yes no function*
+
+I also discovered that I was not doing any checks on player input when asking if the player wanted to hit or stand. A wrong input would break the game. To solve this problem I created the ask_yes_no function which will force the player to enter either a y or n, otherwise the function will keep asking the player the same question and not allow the game to progress until the player complies.
+
 <a name="deployment"></a>
 
 ## Deployment
