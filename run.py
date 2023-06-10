@@ -6,7 +6,7 @@
 # 29/05/2023
 
 import random
-from colorama import Fore, Back, Style
+from colorama import Fore
 
 
 class Card():
@@ -161,7 +161,7 @@ def compare_score(score1, score2):
     elif score1 > score2:
         return Fore.YELLOW + "Player closest to 21. Player wins!"
     else:
-        return Fore.Yellow + "Computer closest to 21. Computer wins!"
+        return Fore.YELLOW + "Computer closest to 21. Computer wins!"
 
 
 def ask_yes_no(question):
