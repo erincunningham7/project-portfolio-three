@@ -100,6 +100,8 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 * I referred to the book Python Programming Third Edition by Michael Dawson, Chapter 9, for inspiration on how to create the Card class and the ask_yes_no function.
 
+* [The blackjack gif was created using ezgif](https://ezgif.com/maker)
+
 <a name="testing"></a>
 
 ## Testing
