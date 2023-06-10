@@ -61,6 +61,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ![Image](images/blackjack-logo.png)
 
+*Suit Symbols*
+
+* The suit symbols were used to more easily decipher the given card suits. I originally had letters for the suits, eg. H for Hearts. It was not good for legibility and I found myself having to stop and think as to what the suit might be. With the symbols it's so much more clearer and enjoyable for the playing user.
+
+![Image]
+
 <a name="features"></a>
 
 ## Features
