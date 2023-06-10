@@ -249,7 +249,7 @@ def play_game():
     computer_hand.clear()
 
 
-def print_menu():
+def print_logo():
     """
     Print User interface and game art
     """
@@ -264,31 +264,42 @@ def print_menu():
               `------'                           |__/
     """
     print(logo)
-    print("Press 1 to view the rules.")
-    print("Press 2 to play the game.")
-    print("Press 0 to Quit the game.")
+
 
 # Creating the user menu allowing the user to interact with the game
 
 
-choice = None
-while choice != "0":
-    print_menu()
-    choice = input("Choose an option: \n")
-    if choice == "0":
-        print("Thanks for playing!")
-    elif choice == "1":
-        show_rules()
-        input("Press enter to continue \n")
-    elif choice == "2":
-        play_again = True
-        play_game()
-        while play_again:
-            play = ask_yes_no(Fore.BLUE +
-                              "Type 'y' to play again or 'n' to quit\n")
-            if play == 'y':
-                play_game()
-            else:
-                play_again = False
-    else:
-        print("Sorry that isnt a valid choice")
+print_logo()
+
+
+def display_menu():
+    """
+    Create user Menu allowing the user to interact with the game
+    """
+    choice = None
+    while choice != "0":
+        print(Style.RESET_ALL + "Press 1 to view the rules.")
+        print(Style.RESET_ALL + "Press 2 to play the game.")
+        print(Style.RESET_ALL + "Press 0 to quit the game.")
+        choice = input(Style.RESET_ALL + "Choose an option: \n")
+
+        if choice == "0":
+            print("Thanks for playing!")
+        elif choice == "1":
+            show_rules()
+            input("Press enter to continue \n")
+        elif choice == "2":
+            play_again = True
+            play_game()
+            while play_again:
+                play = ask_yes_no(Fore.BLUE +
+                                  "Type 'y' to play again or 'n' to quit\n")
+                if play == 'y':
+                    play_game()
+                else:
+                    play_again = False
+        else:
+            print("sorry that is not a valid choice.")
+
+
+display_menu()
