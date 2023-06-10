@@ -15,7 +15,7 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 [Link to app](https://project-portfolio-three-pp3.herokuapp.com/)
 
- [![Video](images/blackjack.gif)
+[![Video](images/blackjack.gif)
 
 <a name="ux"></a>
 
@@ -121,11 +121,17 @@ There are 13 game rules that the user can follow to get the jist of the blackjac
 
 ![Image](images/rules.png)
 
-*Play the game*
+*Play The Game*
 
 When the player hits 2 and enter to play the game, the players hand and computers hand are displayed. The cards for both competitors are clearly shown, with the total score located underneath. The user has a clear grasp of what is happening and has enough information to decide whether to take a hit and gain another card, or stand.
 
 ![Image](images/game-feature.png)
+
+*Computers Turn*
+
+When it is the computers turn to play, the computer will keep taking cards until they reach a total score of 17.
+
+
 
 ### PEP 8 Style Guide
  
