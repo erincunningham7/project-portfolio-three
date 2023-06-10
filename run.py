@@ -253,7 +253,7 @@ def print_menu():
     """
     Print User interface and game art
     """
-    logo = Style.RESET_ALL + """
+    logo = Style.RESET_ALL + r"""
         .------.            _     _            _    _            _
         |A_  _ |.          | |   | |          | |  (_)          | |
         |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
