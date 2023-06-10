@@ -6,6 +6,7 @@
 # 29/05/2023
 
 import random
+from colorama import Fore, Back, Style
 
 
 class Card():
@@ -194,18 +195,18 @@ def play_game():
     players.append(computer_hand)
 
     blackjack_deck.deal(players, 2)
-    print(f"Players Hand: {player_hand}")
-    print(f"Computers Hand: {computer_hand}")
+    print(Fore.RED + f"Players Hand: {player_hand}")
+    print(Fore.GREEN + f"Computers Hand: {computer_hand}")
 
     player_score = player_hand.hand_total()
     computer_score = computer_hand.hand_total()
-    print(f"Player Score: {player_score}")
-    print(f"Computer Score: {computer_score}")
+    print(Fore.RED + f"Player Score: {player_score}")
+    print(Fore.GREEN + f"Computer Score: {computer_score}")
 
     if player_score > 21:
         is_game_over = True
     else:
-        player_hit = ask_yes_no("Type 'y' to hit or 'n' to stand: \n")
+        player_hit = ask_yes_no(Fore.BLUE + "Type 'y' to hit or 'n' to stand: \n")
         if player_hit == 'y':
             blackjack_deck.deal([player_hand])
         else:
@@ -215,16 +216,16 @@ def play_game():
         player_score = player_hand.hand_total()
         computer_score = computer_hand.hand_total()
 
-        print(f"Player Hand: {player_hand}")
-        print(f"Player Score: {player_score}")
+        print(Fore.RED + f"Player Hand: {player_hand}")
+        print(Fore.RED + f"Player Score: {player_score}")
 
-        print(f"Computer Hand: {computer_hand}")
-        print(f"Computer Score: {computer_score}")
+        print(Fore.GREEN + f"Computer Hand: {computer_hand}")
+        print(Fore.GREEN + f"Computer Score: {computer_score}")
 
         if player_score > 21:
             is_game_over = True
         else:
-            player_hit = ask_yes_no("Type 'y' to hit or 'n' to stand: \n")
+            player_hit = ask_yes_no(Fore.BLUE + "Type 'y' to hit or 'n' to stand: \n")
             if player_hit == 'y':
                 blackjack_deck.deal([player_hand])
             else:
@@ -234,10 +235,10 @@ def play_game():
         blackjack_deck.deal([computer_hand])
         computer_score = computer_hand.hand_total()
 
-    print(f"Player cards: {player_hand}")
-    print(f"Player Hand total: {player_score}")
-    print(f"Computer Cards: {computer_hand}")
-    print(f"Computer Hand total: {computer_score}")
+    print(Fore.RED + f"Player cards: {player_hand}")
+    print(Fore.RED + f"Player Hand total: {player_score}")
+    print(Fore.GREEN + f"Computer Cards: {computer_hand}")
+    print(Fore.GREEN + f"Computer Hand total: {computer_score}")
     result = compare_score(player_score, computer_score)
     print(result)
     # Clear the deck for the next round
@@ -250,7 +251,7 @@ def print_menu():
     """
     Print User interface and game art
     """
-    logo = """
+    logo = Style.RESET_ALL + """
         .------.            _     _            _    _            _
         |A_  _ |.          | |   | |          | |  (_)          | |
         |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
@@ -281,7 +282,7 @@ while choice != "0":
         play_again = True
         play_game()
         while play_again:
-            play = ask_yes_no("Type 'y' to play again or 'n' to quit\n")
+            play = ask_yes_no(Fore.BLUE + "Type 'y' to play again or 'n' to quit\n")
             if play == 'y':
                 play_game()
             else:
