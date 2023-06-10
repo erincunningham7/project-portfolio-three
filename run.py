@@ -190,15 +190,18 @@ def play_game():
     players.append(player_hand)
     players.append(computer_hand)
 
+    # Deal two random cards to both players hands
     blackjack_deck.deal(players, 2)
     print(Fore.RED + f"Players Hand: {player_hand}")
     print(Fore.GREEN + f"Computers Hand: {computer_hand}")
 
+    # Calculate player and computer score and display to the user
     player_score = player_hand.hand_total()
     computer_score = computer_hand.hand_total()
     print(Fore.RED + f"Player Score: {player_score}")
     print(Fore.GREEN + f"Computer Score: {computer_score}")
 
+    # Give the player the option to take another card from the deck
     if player_score > 21:
         is_game_over = True
     else:
@@ -209,6 +212,7 @@ def play_game():
         else:
             is_game_over = True
 
+    # When game is over print both players hand and scores
     while not is_game_over:
         player_score = player_hand.hand_total()
         computer_score = computer_hand.hand_total()
@@ -219,6 +223,7 @@ def play_game():
         print(Fore.GREEN + f"Computer Hand: {computer_hand}")
         print(Fore.GREEN + f"Computer Score: {computer_score}")
 
+        # Give the player the option to take another card from the deck
         if player_score > 21:
             is_game_over = True
         else:
@@ -229,10 +234,13 @@ def play_game():
             else:
                 is_game_over = True
 
+    """Computer will keep hitting until cards reach
+    a total value of less than 17"""
     while computer_score < 17:
         blackjack_deck.deal([computer_hand])
         computer_score = computer_hand.hand_total()
 
+    # Print the overall hands and scores when the game is over
     print(Fore.RED + f"Player cards: {player_hand}")
     print(Fore.RED + f"Player Hand total: {player_score}")
     print(Fore.GREEN + f"Computer Cards: {computer_hand}")
