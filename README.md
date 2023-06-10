@@ -233,6 +233,12 @@ During testing, I discovered that when playing if a hand gets more than one ace 
 
 I also discovered that I was not doing any checks on player input when asking if the player wanted to hit or stand. A wrong input would break the game. To solve this problem I created the ask_yes_no function which will force the player to enter either a y or n, otherwise the function will keep asking the player the same question and not allow the game to progress until the player complies.
 
+*Validator*
+
+I used the CI Python Linter to ensure no errors were in the code.
+
+![Image](images/python-linter.png)
+
 <a name="deployment"></a>
 
 ## Deployment
