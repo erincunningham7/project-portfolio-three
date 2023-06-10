@@ -155,6 +155,8 @@ There are 13 game rules that the user can follow to get the jist of the blackjac
 
 * [The blackjack gif was created using ezgif](https://ezgif.com/maker)
 
+*[I used the ci python linter to check for errors](https://pep8ci.herokuapp.com/#)
+
 <a name="testing"></a>
 
 ## Testing
