@@ -169,7 +169,7 @@ When it is the computers turn to play, the computer will keep taking cards until
 
 * [The blackjack gif was created using ezgif](https://ezgif.com/maker)
 
-*[I used the ci python linter to check for errors](https://pep8ci.herokuapp.com/#)
+* [I used the ci python linter to check for errors](https://pep8ci.herokuapp.com/#)
 
 <a name="testing"></a>
 
