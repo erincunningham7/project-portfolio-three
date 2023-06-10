@@ -66,6 +66,12 @@ This is a simple blackjack game. This python game has all the attributes of the 
 
 ## Features
 
+*Game Menu*
+
+The game menu is immediately accessible upon opeing the app. It gives the user three options - to view the game rules, to play the game and to quit the game. The user simply has to press the coinciding digit to make theu choice. It's straightforward and easy to understand.
+
+![Image](images/game-menu.png)
+
 ### PEP 8 Style Guide
  
  The PEP 8 style guidlines were implemented throughout this project.
