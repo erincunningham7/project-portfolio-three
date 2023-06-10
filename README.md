@@ -131,6 +131,12 @@ When the player hits 2 and enter to play the game, the players hand and computer
 
 When it is the computers turn to play, the computer will keep taking cards until they reach a total score of 17. This prevents the computer from winning every time or going bust.
 
+*Winners*
+
+The winner is automatically calculated and shown to the user when the game is over.
+
+![Image](images/winning-feature.png)
+
 ### PEP 8 Style Guide
  
  The PEP 8 style guidlines were implemented throughout this project.
